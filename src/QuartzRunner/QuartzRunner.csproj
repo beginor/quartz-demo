@@ -10,11 +10,11 @@
     <PackageReference Include="Quartz.Serialization.Json" Version="3.0.2" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\QuartzJobs\QuartzJobs.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="quartz.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\QuartzJobs\QuartzJobs.csproj" />
   </ItemGroup>
 </Project>

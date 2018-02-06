@@ -6,12 +6,12 @@ using Quartz.Impl;
 
 namespace QuartzRunner {
 
-    class Program {
+    public class Program {
 
         private static ISchedulerFactory schedulerFactory;
         private static IScheduler scheduler;
 
-        static void Main(string[] args) {
+        public static void Main(string[] args) {
             var task = Run();
             task.Wait();
             
@@ -22,7 +22,7 @@ namespace QuartzRunner {
             shutdownTask.Wait();
         }
 
-        static async Task Run() {
+        private static async Task Run() {
             schedulerFactory = new StdSchedulerFactory();
 
             scheduler = await schedulerFactory.GetScheduler().ConfigureAwait(false);

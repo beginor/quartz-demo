@@ -4,6 +4,13 @@
     <TargetFramework>net461</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Beginor.Owin.WebApi.Windsor" Version="0.2.3" />
+    <PackageReference Include="Castle.Core" Version="4.2.1" />
+    <PackageReference Include="Castle.Windsor" Version="4.1.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.3" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.2.3" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Owin" Version="5.2.3" />
+    <PackageReference Include="Nowin" Version="0.26.0" />
     <PackageReference Include="Quartz" Version="3.0.2" />
     <PackageReference Include="Quartz.Jobs" Version="3.0.2" />
   </ItemGroup>
